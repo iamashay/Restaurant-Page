@@ -5,13 +5,18 @@ module.exports = {
   mode: 'development',
   devtool: 'inline-source-map',
   output: {
-    filename: 'main.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
   },
   devServer: {
     static: './dist',
   },
-  optimization: {
-    runtimeChunk: 'single',
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
   },
 };
