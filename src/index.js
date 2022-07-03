@@ -5,5 +5,5 @@ import './css/style.css'
 import { loadMenu } from "./modules/loadMenu.js";
 
 loadHeader();
-//loadHome();
-loadMenu();
+loadHome();
+//loadMenu();
