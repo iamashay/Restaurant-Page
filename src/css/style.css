@@ -80,6 +80,8 @@ nav {
     color: white;
     text-align: center;
     padding: min(3vw, 67px);
+    margin-top: max(20vh, 50px);
+
 }
 
 .main {
