@@ -123,6 +123,7 @@ button:hover {
 #menu-main h1 {
     text-align: center;
     color: #fff;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .items {
@@ -163,6 +164,7 @@ button:hover {
     padding: 4px;
     border-top: 1px solid #4b4b4b;
     border-left: 1px solid #4b4b4b;
+    background: #4f0707;
 }
 
 .item-pic {
