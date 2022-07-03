@@ -29,7 +29,7 @@ function setupItemDiv(item){
     const itemPic = new Image();
     const picName = item.name.toLowerCase().replaceAll(" ", "-");
     itemPic.classList = "item-pic";
-    itemPic.src = require("../res/img/cuisine/"+picName+".jpeg");
+    itemPic.src = require("../res/img/cuisine/"+picName+".jpg");
     itemPic.alt = item.name;
     itemDiv.appendChild(itemPic);
 
