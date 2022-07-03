@@ -4,7 +4,6 @@ export const loadHome = () => {
 
 
     const contentDiv = document.querySelector("#content");
-    contentDiv.innerHTML = "";
 
     const mainDiv = document.createElement("div");
     mainDiv.id = "home-main";
