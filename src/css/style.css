@@ -1,11 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Samarkan Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samarkan Normal'), url('../res/SAMARN__.woff') format('woff');
+}
+    
+
+@font-face {
+font-family: 'Samarkan Oblique';
+font-style: normal;
+font-weight: normal;
+src: local('Samarkan Oblique'), url('../res/SAMARO__.woff') format('woff');
+}
+
 html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background: #000;
+    opacity: 0.8;
+    color: #fff;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    gap: 20px;    
+}  
+
+nav {
+    padding-right: 20px;
 }
 
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    gap: 10px;
+}
+
+#logo-heading {
+    font-family: 'Samarkan Oblique';
+    font-size: 100px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+#logo-desciption {
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+#home-main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 67px;
+    color: white;
+    background: #0000006e;
+    border: 1px solid #2d2d2d;
+    text-align: center;
+}
+
+#logo-description {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #c53e15;
+    border: 1px solid #fff;
+    padding: 12px;
+    color: #fff;
+    font-size: 16px;
+    transition-duration: 400ms;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #fff;
+    border: 1px solid #c53e15;
+    padding: 12px;
+    color: #c53e15;
+    font-size: 16px;
+}

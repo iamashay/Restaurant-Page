@@ -4,3 +4,4 @@ import {loadContact} from "./modules/loadContact.js"
 import './css/style.css'
 
 loadHeader();
+loadHome();
