@@ -1,15 +1,14 @@
-import backgroundPic from "../res/background.jpg"
 
 export const loadHome = () => {
     console.log("Initial Page Load")
 
-    document.body.style.background = `url("${backgroundPic}") no-repeat center fixed`;
 
     const contentDiv = document.querySelector("#content");
     contentDiv.innerHTML = "";
 
     const mainDiv = document.createElement("div");
     mainDiv.id = "home-main";
+    mainDiv.classList = "main";
     contentDiv.appendChild(mainDiv);
 
     const logoHeading = document.createElement("div");
