@@ -30,7 +30,6 @@ function setupItemDiv(item){
     const picName = item.name.toLowerCase().replaceAll(" ", "-");
     itemPic.classList = "item-pic";
     itemPic.src = require("../res/img/cuisine/"+picName+".jpeg");
-    itemPic.style = "height: 80px; width: 120px;"
     itemPic.alt = item.name;
     itemDiv.appendChild(itemPic);
 

@@ -55,7 +55,6 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     height: 80%;
     gap: 10px;
 }
@@ -79,7 +78,6 @@ nav {
     gap: 10px;
     align-items: center;
     color: white;
-
     text-align: center;
     padding: min(3vw, 67px);
 }
@@ -118,6 +116,8 @@ button:hover {
     padding: min(3vw, 67px);
     gap: 20px;
     min-width: 50%;
+    margin-top: max(5vh, 50px);
+
 }
 
 #menu-main h1 {
@@ -127,7 +127,7 @@ button:hover {
 
 .items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-auto-rows: 180px;
     gap: 30px;
     color: #fff;
@@ -136,13 +136,38 @@ button:hover {
 }
 
 .item {
-    background: #0000007a;
+    background: #00000082;
     padding: 5px;
-    border: 1px solid #a8a8a8;
+    border: 1px solid #4b4b4b;
     color: #ffffff;
+    position: relative;
+    padding-top: 10px;
+    transition-duration: 400ms;
+    cursor: pointer
+}
+
+.item:hover {
+    background: #000000ad;
 }
 
 .item-name {
     font-size: 21px;
     text-shadow: 1px 0px 0px #4f162a;
+    margin-top: 6px;
+}
+
+.item-price {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 4px;
+    border-top: 1px solid #4b4b4b;
+    border-left: 1px solid #4b4b4b;
+}
+
+.item-pic {
+    border: 1px solid #a9a9a9;
+    border-radius: 10px;
+    height: 100px;
+    width: 190px;
 }
