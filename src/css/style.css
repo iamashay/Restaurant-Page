@@ -181,7 +181,6 @@ button:hover {
     flex-direction: column;
     padding: min(3vw, 67px);
     gap: 20px;
-    min-width: 50%;
     margin-top: max(5vh, 50px);
 }
 
@@ -202,13 +201,39 @@ button:hover {
 .input-container input {
     font-size: 17px;
     padding: 4px;
-    align-self: flex-start;
+    background: #eeeeee6b;
+    border: 1px solid #b8b6b6;
+    transition-duration: 400ms;
+    outline: 0;
+
 }
+
+.input-container input:hover, .input-container input:focus {
+    background: #ffffff78;
+    border: 1px solid #eee;
+}
+
 
 .input-container textarea {
     font-size: 17px;
     padding: 4px;
+    background: #eeeeee6b;
+    border: 1px solid #b8b6b6;
+    transition-duration: 400ms;
+    outline: 0;
+
 }
+
+.input-container textarea:hover, .input-container textarea:active {
+    background: #ffffff78;
+    border: 1px solid #eee;
+}
+
+
+.input-container input:focus {
+    border: 1px solid #eee;
+}
+
 
 .button-container {
     display: flex;
