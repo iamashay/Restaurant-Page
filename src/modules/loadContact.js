@@ -8,6 +8,6 @@ export const loadContact = () => {
 
     const heading = document.createElement("h1");
     heading.classList = "page-title";
-    heading.textContent = "Our Menu";
+    heading.textContent = "Contact Us";
     mainDiv.appendChild(heading);
 }

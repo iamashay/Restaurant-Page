@@ -55,6 +55,7 @@ export const loadMenu = () => {
     contentDiv.appendChild(mainDiv);
 
     const heading = document.createElement("h1");
+    heading.classList = "page-title";
     heading.textContent = "Our Menu";
     mainDiv.appendChild(heading);
 
