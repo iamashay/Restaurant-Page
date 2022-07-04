@@ -69,11 +69,12 @@ export const loadMenu = () => {
         itemContainer.appendChild(itemDiv);
     });
 
-    this.show = () => {
+    const show = () => {
         mainDiv.style.display = "";
     }
 
-    this.hide = () => {
+    const hide = () => {
         mainDiv.style.display = "none";
     }
+    return {show, hide};
 }
