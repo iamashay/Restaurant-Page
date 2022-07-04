@@ -12,6 +12,8 @@ function generateFormDiv(){
 
     const nameInput = document.createElement("input");
     nameInput.id = "name";
+    nameInput.name = "name";
+    nameInput.setAttribute('required', '');
     const nameInputLabel = document.createElement("label");
     nameInputLabel.for = "name";
     nameInputLabel.textContent = "Enter Name:";
@@ -20,6 +22,8 @@ function generateFormDiv(){
     const mailInput = document.createElement("input");
     mailInput.id = "email";
     mailInput.type = "email";
+    mailInput.name = "email";
+    mailInput.setAttribute('required', '');
     const mailInputLabel = document.createElement("label");
     mailInputLabel.for = "email";
     mailInputLabel.textContent = "Enter your e-mail:";
@@ -29,6 +33,8 @@ function generateFormDiv(){
     msgInput.id = "msg";
     msgInput.rows = 5;
     msgInput.cols = 30;
+    msgInput.name = "msg";
+    msgInput.setAttribute('required', '');
     const msgInputLabel = document.createElement("label");
     msgInputLabel.for = "msg";
     msgInputLabel.textContent = "Enter your message:";
@@ -43,6 +49,12 @@ function generateFormDiv(){
     form.appendChild(buttonContainer);
 
     return form;
+}
+
+function generateContactInfoDiv(){
+    const infoContainer = document.createElement("div");;
+    infoContainer.id = "info-container";
+    
 }
 
 export const loadContact = () => {
