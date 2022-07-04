@@ -101,4 +101,12 @@ export const loadContact = () => {
 
     const infoDiv = generateContactInfoDiv();
     mainDiv.appendChild(infoDiv);
+
+    this.show = () => {
+        mainDiv.style.display = "";
+    }
+
+    this.hide = () => {
+        mainDiv.style.display = "none";
+    }
 }

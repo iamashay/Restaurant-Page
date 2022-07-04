@@ -24,4 +24,12 @@ export const loadHome = () => {
     viewMenuBut.id = "view-menu-but";
     viewMenuBut.textContent = "View Menu";
     mainDiv.appendChild(viewMenuBut);   
+
+    this.show = () => {
+        mainDiv.style.display = "";
+    }
+
+    this.hide = () => {
+        mainDiv.style.display = "none";
+    }
 }

@@ -68,4 +68,12 @@ export const loadMenu = () => {
         const itemDiv = setupItemDiv(item);
         itemContainer.appendChild(itemDiv);
     });
+
+    this.show = () => {
+        mainDiv.style.display = "";
+    }
+
+    this.hide = () => {
+        mainDiv.style.display = "none";
+    }
 }

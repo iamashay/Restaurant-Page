@@ -4,7 +4,11 @@ import {loadContact} from "./modules/loadContact.js"
 import './css/style.css'
 import { loadMenu } from "./modules/loadMenu.js";
 
-loadHeader();
-//loadHome();
-//loadMenu();
-loadContact();
+function init(){
+    loadHeader();
+    loadHome();
+    loadMenu();
+    loadContact();
+}
+
+init();
