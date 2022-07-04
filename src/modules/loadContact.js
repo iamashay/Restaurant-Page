@@ -1,3 +1,6 @@
+import phonePic from "../res/img/phone.png"
+import locationPic from "../res/img/location.png"
+
 function inputContainer(label, input) {
     const container = document.createElement("div");
     container.classList = "input-container";
@@ -55,6 +58,29 @@ function generateContactInfoDiv(){
     const infoContainer = document.createElement("div");;
     infoContainer.id = "info-container";
     
+    const phoneDiv = document.createElement("div");
+    phoneDiv.classList = "contact-info";
+    const phoneImg = new Image();
+    phoneImg.src = phonePic;
+    const phoneNum = document.createElement("div");
+    phoneNum.textContent = "(+91) 981234567";
+    phoneDiv.appendChild(phoneImg);
+    phoneDiv.appendChild(phoneNum);
+
+
+    const locationDiv = document.createElement("div");
+    locationDiv.classList = "contact-info";
+    const locationImg = new Image();
+    locationImg.src = locationPic;
+    const locationText = document.createElement("div");
+    locationText.textContent = "101, Random Street, Delhi, India";
+    locationDiv.appendChild(locationImg);
+    locationDiv.appendChild(locationText);
+    
+    infoContainer.appendChild(phoneDiv);
+    infoContainer.appendChild(locationDiv);
+
+    return infoContainer;
 }
 
 export const loadContact = () => {
@@ -73,5 +99,6 @@ export const loadContact = () => {
     const form = generateFormDiv();
     mainDiv.appendChild(form)
 
-
+    const infoDiv = generateContactInfoDiv();
+    mainDiv.appendChild(infoDiv);
 }
