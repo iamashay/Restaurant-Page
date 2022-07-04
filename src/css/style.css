@@ -122,7 +122,7 @@ button:hover {
 
 }
 
-#menu-main h1 {
+.page-title  {
     text-align: center;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
