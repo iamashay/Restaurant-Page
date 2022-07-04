@@ -175,3 +175,42 @@ button:hover {
     height: 100px;
     width: 190px;
 }
+
+#contact-main {
+    display: flex;
+    flex-direction: column;
+    padding: min(3vw, 67px);
+    gap: 20px;
+    min-width: 50%;
+    margin-top: max(5vh, 50px);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-bottom: 20px;
+}
+
+.input-container label {
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.input-container input {
+    font-size: 17px;
+    padding: 4px;
+    align-self: flex-start;
+}
+
+.input-container textarea {
+    font-size: 17px;
+    padding: 4px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
