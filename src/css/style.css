@@ -104,6 +104,7 @@ nav {
 .main {
     background: #0000006e;
     border: 1px solid #2d2d2d;
+    margin-bottom: 1vh;
 }
 
 #logo-description {
