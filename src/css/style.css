@@ -60,6 +60,7 @@ nav li:hover {
 
 nav {
     padding-right: 20px;
+    align-self: center;
 }
 
 #content {
@@ -68,6 +69,11 @@ nav {
     align-items: center;
     height: 80%;
     gap: 10px;
+}
+
+#logo {
+    font-size: 32px;
+    color: #a17d0f;
 }
 
 #logo-heading {
@@ -266,4 +272,27 @@ button:hover {
 @keyframes show {
     from {opacity: 0%;}
     to {opacity: 100%;}
+}
+
+@media screen and (max-width: 600px) {
+
+    #logo-heading {
+        font-size: 70px;
+    }
+
+    #logo {
+        font-size: 25px;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        padding: 10px;
+    }
+
 }
