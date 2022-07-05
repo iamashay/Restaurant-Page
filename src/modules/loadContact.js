@@ -109,5 +109,5 @@ export const loadContact = () => {
     const hide = () => {
         mainDiv.style.display = "none";
     }
-    return {show, hide};
+    return {mainDiv, show, hide};
 }

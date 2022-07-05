@@ -32,5 +32,5 @@ export const loadHome = () => {
     const hide = () => {
         mainDiv.style.display = "none";
     }
-    return {show, hide};
+    return {mainDiv, show, hide};
 }

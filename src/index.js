@@ -21,12 +21,15 @@ function showOnly(event){
 
     const targetText = event.target.textContent;
 
-    if (targetText.indexOf("Home") > -1) 
+    if (targetText.indexOf("Home") > -1)
         homeHandler.show();
+        homeHandler.mainDiv.style.animation = "500ms show";
     if (targetText.indexOf("Menu") > -1) 
         menuHandler.show();
+        menuHandler.mainDiv.style.animation = "500ms show";
     if (targetText.indexOf("Contact") > -1) 
         contactHandler.show();
+        contactHandler.mainDiv.style.animation = "500ms show";
 }
 
 const navLinks = document.querySelectorAll("nav li");
@@ -35,3 +38,7 @@ const navLinksArr = [...navLinks];
 navLinksArr.forEach(link => {
     link.addEventListener("click", showOnly);
 })
+
+const viewMenuBut = document.querySelector("#view-menu-but");
+
+viewMenuBut.addEventListener("click", showOnly);

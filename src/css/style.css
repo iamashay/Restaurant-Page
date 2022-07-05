@@ -49,6 +49,13 @@ nav ul {
 
 nav li {
     cursor: pointer;
+    transition: 300ms ease-in-out;
+    border-bottom: 2px solid #fff0;
+}
+
+nav li:hover {
+    color: #f29420;
+    border-bottom: 2px solid #fff;
 }
 
 nav {
@@ -254,4 +261,9 @@ button:hover {
     font-size: 18px;
     font-weight: 600;
     text-shadow: -1px -1px 1px #000;
+}
+
+@keyframes show {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
 }
